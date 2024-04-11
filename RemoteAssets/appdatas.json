@@ -1,21 +1,26 @@
 {
     "feature": {
+        "name" : "Tử vi",
         "iconPath" : "Icons/tuvi.jpeg",
         "url" : "https://tuvi.vn/"
     },
     "facebook": {
+        "name" : "Facebook",
         "iconPath" : "Icons/facebook.png",
         "url" : "https://facebook.com"
     },
     "google": {
+        "name" : "Google",
         "iconPath" : "Icons/google.png",
         "url" : "https://google.com"
     },
     "zingmp3": {
+        "name" : "Zing Mp3",
         "iconPath" : "Icons/zingmp3.jpeg",
         "url" : "https://zingmp3.vn"
     },
     "youtube": {
+        "name" : "Youtube",
         "iconPath" : "Icons/youtube.png",
         "url" : "https://youtube.com"
     }
