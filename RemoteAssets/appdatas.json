@@ -1,9 +1,9 @@
 {
     "feature": {
-        "name" : "Tử vi",
-        "iconPath" : "Icons/tuvi.jpeg",
-        "url" : "https://giadungplus.com",
-        "title" : "",
+        "name" : "Đào tạo bếp trưởng",
+        "iconPath" : "Icons/amthuc.jpeg",
+        "url" : "https://daotaobeptruong.vn/tin-tuc/am-thuc",
+        "title" : "Nổi bật",
         "fullScreen" : true,
         "autoOpen": false
     },
@@ -12,14 +12,9 @@
         "iconPath" : "Icons/xe.png",
         "url" : "https://www.otoxemay.vn/"
     },
-    "amthuc": {
-        "name" : "Đào tạo bếp trưởng",
-        "iconPath" : "Icons/amthuc.png",
-        "url" : "https://daotaobeptruong.vn/tin-tuc/am-thuc"
-    },
     "dulich": {
         "name" : "Du lịch thế giới",
-        "iconPath" : "Icons/dulich.jpeg",
+        "iconPath" : "Icons/dulich.png",
         "url" : "https://dulichthegioi.com.vn/"
     },
     "tuvi": {
@@ -29,7 +24,7 @@
     },
     "phongthuy": {
         "name" : "Phong thủy",
-        "iconPath" : "Icons/phongthuy.jpeg",
+        "iconPath" : "Icons/phongthuy.png",
         "url" : "https://www.tracuuphongthuy.com/"
     }
 }
