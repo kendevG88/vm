@@ -1,11 +1,11 @@
 {
     "feature": {
         "name" : "Đào tạo bếp trưởng",
-        "iconPath" : "Icons/amthuc.jpeg",
+        "iconPath" : "Icons/amthuc.png",
         "url" : "https://daotaobeptruong.vn/tin-tuc/am-thuc",
         "title" : "Nổi bật",
         "fullScreen" : false,
-        "autoOpen": true
+        "autoOpen": false
     },
     "xe": {
         "name" : "Tạp chí xe",
