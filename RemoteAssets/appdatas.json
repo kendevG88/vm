@@ -1,0 +1,18 @@
+{
+    "facebook": {
+        "iconPath" : "Icons/facebook.png",
+        "url" : "https://facebook.com"
+    },
+    "google": {
+        "iconPath" : "Icons/google.png",
+        "url" : "https://google.com"
+    },
+    "zingmp3": {
+        "iconPath" : "Icons/zingmp3.jpeg",
+        "url" : "https://zingmp3.vn"
+    },
+    "youtube": {
+        "iconPath" : "Icons/youtube.png",
+        "url" : "https://youtube.com"
+    }
+}
