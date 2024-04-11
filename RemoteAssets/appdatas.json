@@ -4,8 +4,8 @@
         "iconPath" : "Icons/amthuc.jpeg",
         "url" : "https://daotaobeptruong.vn/tin-tuc/am-thuc",
         "title" : "Nổi bật",
-        "fullScreen" : true,
-        "autoOpen": false
+        "fullScreen" : false,
+        "autoOpen": true
     },
     "xe": {
         "name" : "Tạp chí xe",
