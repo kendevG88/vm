@@ -2,26 +2,34 @@
     "feature": {
         "name" : "Tử vi",
         "iconPath" : "Icons/tuvi.jpeg",
+        "url" : "https://giadungplus.com",
+        "title" : "",
+        "fullScreen" : true,
+        "autoOpen": false
+    },
+    "xe": {
+        "name" : "Tạp chí xe",
+        "iconPath" : "Icons/xe.png",
+        "url" : "https://www.otoxemay.vn/"
+    },
+    "amthuc": {
+        "name" : "Đào tạo bếp trưởng",
+        "iconPath" : "Icons/amthuc.png",
+        "url" : "https://daotaobeptruong.vn/tin-tuc/am-thuc"
+    },
+    "dulich": {
+        "name" : "Du lịch thế giới",
+        "iconPath" : "Icons/dulich.jpeg",
+        "url" : "https://dulichthegioi.com.vn/"
+    },
+    "tuvi": {
+        "name" : "Tử vi",
+        "iconPath" : "Icons/tuvi.jpeg",
         "url" : "https://tuvi.vn/"
     },
-    "facebook": {
-        "name" : "Facebook",
-        "iconPath" : "Icons/facebook.png",
-        "url" : "https://www.facebook.com"
-    },
-    "google": {
-        "name" : "Google",
-        "iconPath" : "Icons/google.png",
-        "url" : "https://www.google.com"
-    },
-    "zingmp3": {
-        "name" : "Zing Mp3",
-        "iconPath" : "Icons/zingmp3.jpeg",
-        "url" : "https://zingmp3.vn"
-    },
-    "youtube": {
-        "name" : "Youtube",
-        "iconPath" : "Icons/youtube.png",
-        "url" : "https://www.youtube.com"
+    "phongthuy": {
+        "name" : "Phong thủy",
+        "iconPath" : "Icons/phongthuy.jpeg",
+        "url" : "https://www.tracuuphongthuy.com/"
     }
 }
