@@ -1,4 +1,8 @@
 {
+    "feature": {
+        "iconPath" : "Icons/tuvi.jpeg",
+        "url" : "https://tuvi.vn/"
+    },
     "facebook": {
         "iconPath" : "Icons/facebook.png",
         "url" : "https://facebook.com"
