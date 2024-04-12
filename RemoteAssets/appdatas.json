@@ -2,6 +2,7 @@
     "feature": {
         "name" : "Đào tạo bếp trưởng",
         "iconPath" : "Icons/amthuc.png",
+        "descriptionImgPath" : "",
         "url" : "https://daotaobeptruong.vn/tin-tuc/am-thuc",
         "title" : "Nổi bật",
         "fullScreen" : false,
