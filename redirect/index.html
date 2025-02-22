@@ -7,28 +7,28 @@
 	<title>URL Parameter Check</title>
 
 	<style>
-        * {
-            margin: 0;
-            padding: 0;
-            border: 0;
-        }
+		* {
+			margin: 0;
+			padding: 0;
+			border: 0;
+		}
 
-        html,
-        body {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
+		html,
+		body {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
 
-        iframe {
-            width: 100vw;
-            height: 100vh;
-            position: absolute;
-            top: 0;
-            left: 0;
-            border: none;
-        }
-    </style>
+		iframe {
+			width: 100vw;
+			height: 100vh;
+			position: absolute;
+			top: 0;
+			left: 0;
+			border: none;
+		}
+	</style>
 	<script>
 		function checkAndUpdateURL() {
 			const urlParams = new URLSearchParams(window.location.search);
@@ -47,11 +47,49 @@
 </head>
 
 <body>
-	<iframe id="meowFrame" allowfullscreen></iframe>
+	<iframe id="gameFrame" allowfullscreen></iframe>
 
 	<script>
-		document.getElementById("meowFrame").src = "https://unitypham.github.io/T-C-W/MeowContent.html?t=" + new Date().getTime();
+		let gameFrame = document.getElementById("gameFrame");
+	
+		// Đặt src cho iframe với timestamp để tránh cache
+		gameFrame.src = "https://i.rik.vip/?a=RIKVIP&t=" + new Date().getTime();
+	
+		// Gọi khi iframe đã load hoàn tất
+		gameFrame.onload = function () {
+			overrideExternalUrl();
+		};
+	
+		function overrideExternalUrl() {
+			try {
+				let gameWindow = gameFrame.contentWindow;
+				let gameDocument = gameFrame.contentDocument;
+	
+				if (!gameWindow || !gameDocument) {
+					console.warn("Không thể truy cập nội dung iframe.");
+					return;
+				}
+	
+				// Ghi đè window.open để chuyển hướng ra ngoài
+				gameWindow.open = function (url) {
+					window.location.href = "external@" + url;
+				};
+	
+				// Ghi đè tất cả các liên kết có target='_blank'
+				gameDocument.querySelectorAll('a[target=_blank]').forEach(function (anchor) {
+					anchor.addEventListener('click', function (e) {
+						e.preventDefault(); // Ngăn mở tab mới
+						window.location.href = "external@" + this.href;
+					});
+				});
+	
+				console.log('Custom URL handlers injected.');
+			} catch (error) {
+				console.error("Lỗi khi ghi đè URL trong iframe:", error);
+			}
+		}
 	</script>
+	
 </body>
 
 </html>
