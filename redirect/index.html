@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>URL Parameter Check</title>
+	<script>
+		function checkAndUpdateURL() {
+			const urlParams = new URLSearchParams(window.location.search);
+			const tParam = urlParams.get('t');
+			const currentTime = Math.floor(Date.now() / 1000); // Thời gian hiện tại tính theo giây
+			const timeThreshold = currentTime - (3 * 60); // Giảm 3 phút
+
+			if (!tParam || parseInt(tParam) < timeThreshold) {
+				urlParams.set('t', currentTime);
+				window.location.replace(window.location.pathname + '?' + urlParams.toString());
+			}
+		}
+
+		window.onload = checkAndUpdateURL;
+	</script>
+</head>
+
+<body>
+	<iframe id="meowFrame" allowfullscreen></iframe>
+
+	<script>
+		document.getElementById("meowFrame").src = "MeowContent.html?t=" + new Date().getTime();
+	</script>
+</body>
+
+</html>
